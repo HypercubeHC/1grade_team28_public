@@ -1,0 +1,81 @@
+body {
+    background-color: #ffffff;
+    background-image: url('./img/3.jpg');
+    background-size: 100%;
+    font-family: Arial;
+
+}
+.settings {
+    /*grid-area: desc;*/
+    /*display: block;*/
+    gap: 25px;
+    padding: 5px;
+    background-color: rgba(246, 136, 87, 0.2);
+}
+
+#restart-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #f68857;
+    color: #f5f5f5;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.button-container {
+    grid-area: buttons;
+    margin-right: 50px;
+    display: inline-grid;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #f68857;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+}
+button:hover {
+    background-color: #e16630;
+    box-shadow: 0 8px 10px 0 rgba(68, 17, 0, 0.24), 0 17px 50px 0 rgba(241, 65, 9, 0.19);
+}
+
+#reset-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #f68857;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+#reset-button:hover, #restart-button:hover {
+    background-color: rgba(255, 10, 0, 100);
+    box-shadow: 0 8px 10px 0 rgba(255, 10, 0, 0.24), 0 17px 50px 0 rgba(255, 10, 0, 0.24);
+}
+
+.grid-container {
+    margin-top: 2rem;
+    display: grid;
+    gap: 10px;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". desc canvas buttons .";
+    align-items: start;
+}
+
+#canvas-container {
+    justify-self: center;
+    grid-area: canvas;
+    border: #f68857 solid 3px;
+}
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script src="p5.js"></script>
+    <script src="ant_alg.js" type="text/javascript"></script>
+    <script src="ant_clss.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="ant_stl.css" />
+    <title>Ant algorithm</title>
+    <style>
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <div id="canvas-container"></div>
+    <div class="button-container" >
+        <button id="slow-button" onclick="slow_speed()">slow speed</button>
+        <button id="normal-button" onclick="normal_speed()">normal speed</button>
+        <button id="fast-button" onclick="fast_speed()">fast speed</button>
+        <button id="reset-button" onclick="reset_simulation()">reset simulation</button>
+        <button id="toggle-button" onclick="start_stop()">start / stop</button>
+        <button id="settings-button" onclick="settings()">Settings</button>
+    <div class="settings" hidden>
+            <label id="food_cap_label" for="food_cap">Set food capacity: </label><br />
+            <input type="range" min='1' max="500" value="500" class="evapSlider" id="food_cap"
+                   oninput="updateFoodCap(value)"> <label for="food_cap" id="foodcapLabel"></label>
+        <br />
+            <label id="food_amt_label" for="food_amt">Set food amount: </label><br />
+            <input type="range" min='1' max="50" value="15" class="evapSlider" id="food_amt"
+                   oninput="updateFoodAmt(value)"> <label for="food_amt" id="foodamtLabel"></label>
+        <br />
+            <label id="ant_label" for="ant_amt">Set ant amount: </label><br />
+            <input type="range" min='1' max="100" value="25" class="evapSlider" id="ant_amt"
+                   oninput="updateAntAmt(value)"> <label for="ant_amt" id="antdamtLabel"></label>
+        <br />
+            <label id="wall_label" for="wall_amt">Set wall amount: </label><br />
+            <input type="range" min='0' max="50" value="15" class="evapSlider" id="wall_amt"
+                   oninput="updateWallAmt(value)"> <label for="wall_amt" id="wallamtLabel"></label>
+        <br />
+        <button id="restart-button" onclick="reset_simulation()">Apply &amp; restart</button>
+    </div>
+    </div>
+</div>
+</body>
+</html>

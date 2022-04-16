@@ -1,0 +1,183 @@
+body {
+    font-family: monospace;
+    font-size:20px;
+    color: white;
+    background: url(/prism.png);
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8C959D;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    width: 25%;
+    height: 50px;
+}
+a.button:active {
+    background-color: rgb(80,103,189);
+}
+a.button:hover {
+    background-color: rgb(80,103,189);
+}
+.text-block {
+    padding-top: 50px;
+}
+p1{
+    font-family: SansSerif;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    display:block;
+    width:5%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding:10px;
+}
+.btn-create, .wall-create, .start-create, .end-create, .path-create, .btn-start, .btn-reset, .btn-back{
+    width:7%;
+    border-radius:10px;
+    float:left;
+    margin:0 10px;
+    text-align: center;
+}
+#MyCanvas {
+    background-color: white;
+    position: absolute;
+    border: 1px solid;
+    padding: 0;
+    margin: auto;
+    display: block;
+    top: 160px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#container {
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+}
+
+.node_node {
+    background-color: white;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+.node_wall {
+    background-color: dimgray;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+.node_start {
+    background-color: darkorange;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+.node_end {
+    background-color: mediumpurple;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+.node_path {
+    background-color: blue;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+.node_closed {
+    background-color: red;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+.node_open {
+    background-color: green;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+.path_complete {
+    background-color: hotpink;
+    width: 2%;
+    border: 1px black;
+    display: block;
+    margin: auto;
+    padding:10px;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    background: rgb(140,23,140);
+    background: linear-gradient(90deg, rgba(140,23,140,1) 35%, rgba(0,212,255,1) 100%);
+    height: 100px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.title{
+    display: flex;
+    font-size: 36px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1910px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+}
+
+.kmean{
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+}

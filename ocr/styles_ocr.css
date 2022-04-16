@@ -1,0 +1,101 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('./img/1.jpg');
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: "Arial", sans-serif;
+}
+
+button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background: #f68857;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #e16630;
+    box-shadow: 0 8px 10px 0 rgba(68, 17, 0, 0.24), 0 17px 50px 0 rgba(241, 65, 9, 0.19);
+}
+
+#outer {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+}
+
+#left {
+    height: 350px;
+    width: 50%;
+}
+
+#right {
+    padding-left: 1em;
+    height: 350px;
+    width: 50%;
+}
+
+#playground {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#prediction {
+    border: 2px solid #ffa580;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+}
+
+#download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#downloadLink {
+    color: blue;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.buttonbar {
+    margin-top: 1em;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#status {
+    width: 90%;
+    border: 2px solid #ffa580;
+    background-color: #eeeeee;
+    height: 250px;
+    overflow: scroll;
+    padding-left: 1em;
+    font-family: "Arial";
+    display: flex;
+    flex-direction: column-reverse;
+}

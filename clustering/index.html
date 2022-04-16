@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Clustering</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+<script src='http://d3js.org/d3.v2.js'></script>
+<br>
+<p1>Введите количество классов:</p1>
+<br>
+<div id="buttons">
+    <input type="number" class="type-1" id="val" value="">
+    <p><input type="button" class="btn-back" value="Назад" id="btn-back" onclick="window.location.href = '../index.html';"></p>
+    <input type="button" class="btn-create" value="Рисовать" onclick="kmeans.initArea();">
+    <input type="button" class="btn-create" value="Инициализировать" onclick="push();">
+    <input type="button" class="btn-create" value="Запустить" onclick="kmeans.starts = 1;">
+    <input type="button" class="btn-create" value="Сбросить" onclick="location.reload();">
+</div>
+<br>
+<br>
+<br>
+<div id="kmeans" class="kmean">
+    <svg id="canvas"></svg>
+</div>
+<script type="text/javascript" src="sample.js">  </script>
+</body>
+</html>
